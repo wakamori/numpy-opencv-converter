@@ -7,7 +7,7 @@ function(boost_python_module NAME)
   # For some odd reason, Boost_DIR is set to not found
   # http://stackoverflow.com/questions/18927970/boost-dir-notfound-on-cmake
   set (Boost_DIR "" CACHE INTERNAL "")
-  find_package(PythonLibs REQUIRED)
+  #find_package(PythonLibs 2.7 REQUIRED)
 
   set(DEP_LIBS
     ${Boost_PYTHON_LIBRARY}
